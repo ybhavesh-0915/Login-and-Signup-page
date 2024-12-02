@@ -1,4 +1,10 @@
 @media (max-width:660px) {
+    body {
+        background-image: url(background1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
     .main-form {
         width: 300px;
     }

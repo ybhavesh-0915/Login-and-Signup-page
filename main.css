@@ -11,14 +11,14 @@
 body{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #fff, #7c68ee);
 }
 
 .login-signup-box{
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
     align-content: center;
     place-content: center;
     position: fixed;
@@ -41,7 +41,9 @@ body{
     width: 350px;
     padding: 25px;
     border-radius: 0 100px 70px 0;
-    background-color: blue;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,11 +69,16 @@ body{
 .usergreet .login-greet-box button, .signup-greet-box button{
     margin-top: 20px;
     padding: 3px 15px;
-    background-color: transparent;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid #7c68ee;
+    background-color: #7c68ee;
     color: #fff;
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.usergreet .login-greet-box button:hover, .signup-greet-box button:hover{
+    
 }
 
 .usergreet .hidegreet-box{
@@ -82,6 +89,7 @@ body{
     width: 300px;
     padding: 8px;
     position: relative;
+    /* background-image: url(bg.jpg); */
 }
 
 .forms .close-btn{
@@ -150,7 +158,7 @@ body{
     text-transform: none;
 }
 
-.login-email-box input[type=email]:invalid{
+.login-email-box input[type=email]:not(:placeholder-shown):invalid{
     color: red;
 }
 
@@ -175,7 +183,8 @@ body{
     padding: 5px;
     border: 0;
     border-radius: 5px;
-    background-color: #3062d4;
+    /* background-color: #3062d4; */
+    background-color: #7c68ee;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -195,6 +204,7 @@ body{
 .mtd .or span{
     padding: 5px;
     background-color: #fff;
+    color: #000;
 }
 
 .mtd .mtd-btn{
